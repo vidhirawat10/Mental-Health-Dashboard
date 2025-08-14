@@ -21,7 +21,7 @@ except FileNotFoundError:
     df = pd.DataFrame(columns=['Age_Group', 'Gender', 'Country', 'treatment', 'no_employees', 'self_employed', 'family_history', 'remote_work', 'tech_company', 'benefits', 'care_options', 'wellness_program', 'seek_help', 'anonymity', 'leave', 'mental_health_consequence', 'phys_health_consequence', 'coworkers', 'supervisor', 'mental_health_interview', 'phys_health_interview', 'mental_vs_physical', 'obs_consequence', 'work_interfere'])
 
 
-# --- Stress Analyzer Logic (Copied from previous app.py) ---
+
 def calculate_stress_index(sleep_hours, work_hours, screen_time, activity, caffeine,
                            q_stressed, q_interfere, q_sleep_well, q_policies, q_talk_to_someone):
     score = 0
