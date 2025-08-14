@@ -10,7 +10,6 @@ import plotly.graph_objects as go
 import numpy as np
 from pandas.api.types import CategoricalDtype 
 
-# Load data again for callbacks that might need it. Or, load it once and pass it around.
 
 try:
     df = pd.read_csv('data/cleaned_mental_health_survey.csv')
