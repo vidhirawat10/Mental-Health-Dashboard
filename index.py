@@ -139,7 +139,7 @@ def get_risk_factors_and_recommendations(sleep_hours, work_hours, screen_time, a
 
     return list(set(risk_factors)), list(set(recommendations))
 
-# --- Main App Layout ---
+
 app.layout = html.Div(
     style={'backgroundColor': '#222222', 'color': 'white', 'minHeight': '100vh'}, # Global dark background for the entire app
     children=[
