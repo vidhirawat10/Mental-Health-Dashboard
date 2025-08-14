@@ -1,8 +1,8 @@
 # index.py
 
 from dash import dcc, html, Input, Output, State
-from app import app, server # Import app from your app.py
-from pages import stress_analyzer, survey_results # Import the page layouts
+from app import app, server 
+from pages import stress_analyzer, survey_results 
 
 import pandas as pd
 import plotly.express as px
