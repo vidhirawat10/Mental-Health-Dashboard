@@ -16,7 +16,7 @@ try:
     print("Cleaned data loaded successfully in index.py for callbacks.")
 except FileNotFoundError:
     print("Error: 'cleaned_mental_health_survey.csv' not found. Make sure it's in the 'data/' directory.")
-    # Exit if critical data is missing, or create a dummy DataFrame to prevent further errors
+    
     df = pd.DataFrame(columns=['Age_Group', 'Gender', 'Country', 'treatment', 'no_employees', 'self_employed', 'family_history', 'remote_work', 'tech_company', 'benefits', 'care_options', 'wellness_program', 'seek_help', 'anonymity', 'leave', 'mental_health_consequence', 'phys_health_consequence', 'coworkers', 'supervisor', 'mental_health_interview', 'phys_health_interview', 'mental_vs_physical', 'obs_consequence', 'work_interfere'])
 
 
