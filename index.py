@@ -273,7 +273,7 @@ def update_stress_results(n_clicks, sleep, work_hours, screen_time, activity, ca
                         y=y_value_for_annotation,
                         text=f"Your Age Group",
                         showarrow=True, arrowhead=2, ax=0, ay=-40,
-                        font=dict(color="#FFD700", size=14, weight='bold'), # Gold color for visibility in dark mode
+                        font=dict(color="#FFD700", size=14, weight='bold'), 
                         bgcolor="rgba(0,0,0,0.8)", bordercolor="#FFD700", borderwidth=1, borderpad=4
                     )
             comparison_graph = dcc.Graph(figure=comparison_fig, config={'displayModeBar': False})
