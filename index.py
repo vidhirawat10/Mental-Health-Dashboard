@@ -225,15 +225,14 @@ def update_stress_results(n_clicks, sleep, work_hours, screen_time, activity, ca
                     'value': score}}
         ))
         gauge_fig.update_layout(height=250, margin=dict(l=10, r=10, t=50, b=10),
-                                paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)') # Transparent background for integration
+                                paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)') 
 
         score_graph = dcc.Graph(figure=gauge_fig, config={'displayModeBar': False})
 
         risk_list_items = [html.Li(factor) for factor in risk_factors] if risk_factors else [html.Li("No significant risk factors identified based on inputs.")]
         reco_list_items = [html.Li(reco) for reco in recommendations] if recommendations else [html.Li("Continue your healthy habits!")]
 
-
-        # --- Generate Comparison Graph (User's Stress Score vs. Average Survey Treatment Seeking by Age Group) ---
+        
         age_group_user = None
         bins = [0, 25, 35, 45, 55, 65, np.inf]
         labels = ['18-25', '26-35', '36-45', '46-55', '56-65', '65+']
