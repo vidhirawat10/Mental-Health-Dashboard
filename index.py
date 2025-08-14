@@ -8,10 +8,10 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
-from pandas.api.types import CategoricalDtype # Import CategoricalDtype
+from pandas.api.types import CategoricalDtype 
 
 # Load data again for callbacks that might need it. Or, load it once and pass it around.
-# For simplicity, we'll load it here too.
+
 try:
     df = pd.read_csv('data/cleaned_mental_health_survey.csv')
     print("Cleaned data loaded successfully in index.py for callbacks.")
